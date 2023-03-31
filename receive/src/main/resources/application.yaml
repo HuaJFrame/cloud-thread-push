@@ -1,0 +1,12 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: receive
+  # 微服务
+  cloud:
+    # nacos 注册中心
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+

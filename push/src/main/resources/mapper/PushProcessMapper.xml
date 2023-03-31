@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huajframe.push.dao.PushProcessMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.huajframe.push.entity.PushProcess">
+        <id column="id" property="id" />
+        <result column="process_name" property="processName" />
+        <result column="audit_person" property="auditPerson" />
+        <result column="audit_result" property="auditResult" />
+        <result column="push_flag" property="pushFlag" />
+        <result column="push_state" property="pushState" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, process_name, audit_person, audit_result, push_flag, push_state
+    </sql>
+
+</mapper>
